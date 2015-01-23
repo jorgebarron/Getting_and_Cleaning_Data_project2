@@ -21,7 +21,7 @@ Xysubjectdata <- cbind(Xydata, subjectdata)
 # convert features class to character
 features$V2 <- as.character(features$V2)
 
-tidyDataSet <- group_by(Xysubjectdata, Subject, Activity) %>%  summarise_each(funs(mean))
+#tidyDataSet <- group_by(Xysubjectdata, Subject, Activity) %>%  summarise_each(funs(mean))
 
 # insert names to columns
 varNames <- c(features[,2], "Subject", "Activity")
